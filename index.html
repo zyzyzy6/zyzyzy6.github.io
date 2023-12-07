@@ -1,12 +1,12 @@
     <script>
-        // 获取当前页面的 URL
+
         var currentURL = window.location.href;
 
-        // 解析 URL，提取参数
+
         var urlParams = new URLSearchParams(window.location.search);
         var id = urlParams.get('id');
 
-        // 根据参数值进行跳转
+
         if (id === '1') {
             window.location.href = 'https://www.baidu.com';
         } else if (id === '2') {
@@ -14,7 +14,7 @@
         } else if (id === '3') {
             window.location.href = 'https://www.sogou.com';
         } else {
-            // 如果未匹配到任何参数值，可以添加默认跳转或其他逻辑
-            console.log('No matching parameter found.');
+
+            window.location.href = 'https://www.baidu.com';
         }
     </script>
